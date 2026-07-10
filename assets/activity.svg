@@ -22,7 +22,7 @@
   <text class="subtitle" x="28" y="60">Trailing twelve months of public GitHub data</text>
   <g>
     <rect class="panel" x="28" y="78" width="196" height="70" rx="8" />
-    <text class="metric" x="44" y="108">120</text>
+    <text class="metric" x="44" y="108">140</text>
     <text class="label" x="44" y="132">public contributions</text>
   </g>
   <g>
@@ -32,7 +32,7 @@
   </g>
   <g>
     <rect class="panel" x="452" y="78" width="196" height="70" rx="8" />
-    <text class="metric" x="468" y="108">11</text>
+    <text class="metric" x="468" y="108">26</text>
     <text class="label" x="468" y="132">reviews</text>
   </g>
   <g>
@@ -81,7 +81,7 @@
     <text class="muted" x="696" y="268" text-anchor="middle">May</text>
   </g>
   <g>
-    <rect x="745" y="236.6" width="44" height="13.4" rx="4" fill="#2f81f7" />
+    <rect x="745" y="238.8" width="44" height="11.2" rx="4" fill="#2f81f7" />
     <text class="muted" x="767" y="268" text-anchor="middle">Jun</text>
   </g>
   <g>
