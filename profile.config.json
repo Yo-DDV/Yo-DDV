@@ -1,0 +1,56 @@
+{
+  "username": "Yo-DDV",
+  "name": "Yoan De Vermont",
+  "capabilities": [
+    {
+      "title": "Systems",
+      "color": "#2f81f7",
+      "items": [
+        "Linux service operations",
+        "Windows Server administration",
+        "OS hardening and patching",
+        "Recovery-focused maintenance"
+      ]
+    },
+    {
+      "title": "Networks",
+      "color": "#3fb950",
+      "items": [
+        "Cisco switching and routing",
+        "Palo Alto policy review",
+        "VLANs, trunks and ACL design",
+        "Traffic-flow troubleshooting"
+      ]
+    },
+    {
+      "title": "Service edge",
+      "color": "#d29922",
+      "items": [
+        "HAProxy, Nginx and Caddy",
+        "Traefik and Cloudflare edge",
+        "IPsec, WireGuard and OpenVPN",
+        "TLS, DNS and WAF exposure"
+      ]
+    },
+    {
+      "title": "Platforms",
+      "color": "#a371f7",
+      "items": [
+        "Proxmox and VMware estates",
+        "OpenWrt router operations",
+        "Docker and Nextcloud stacks",
+        "VPS hosting and backups"
+      ]
+    },
+    {
+      "title": "Automation",
+      "color": "#f85149",
+      "items": [
+        "Ansible automation",
+        "Bash tooling",
+        "Python scripting",
+        "GitHub Actions CI"
+      ]
+    }
+  ]
+}

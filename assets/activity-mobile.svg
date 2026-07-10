@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="430" viewBox="0 0 420 430" role="img" aria-labelledby="title desc">
+  <title id="title">Trailing twelve-month public GitHub activity for mobile screens</title>
+  <desc id="desc">A mobile-friendly view of public contribution activity for Yo-DDV.</desc>
+  <style>
+    .bg { fill: #ffffff; stroke: #d0d7de; }
+    .panel { fill: #f6f8fa; stroke: #d8dee4; }
+    .title { fill: #1f2328; font: 700 22px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .subtitle { fill: #636c76; font: 400 13px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .metric { fill: #1f2328; font: 700 25px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .label { fill: #636c76; font: 500 12px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .body { fill: #1f2328; font: 500 13px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .muted { fill: #636c76; font: 400 11px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #0d1117; stroke: #30363d; }
+      .panel { fill: #161b22; stroke: #30363d; }
+      .title, .metric, .body { fill: #f0f6fc; }
+      .subtitle, .label, .muted { fill: #8b949e; }
+    }
+  </style>
+  <rect class="bg" x="0.5" y="0.5" width="419" height="429" rx="8" />
+  <text class="title" x="24" y="38" style="font-size:20px">Open-source activity</text>
+  <text class="subtitle" x="24" y="60">Trailing twelve months of public GitHub data</text>
+  <g>
+    <rect class="panel" x="24" y="80" width="183" height="64" rx="8" />
+    <text class="metric" x="38" y="108" style="font-size:22px">120</text>
+    <text class="label" x="38" y="129">public contributions</text>
+  </g>
+  <g>
+    <rect class="panel" x="213" y="80" width="183" height="64" rx="8" />
+    <text class="metric" x="227" y="108" style="font-size:22px">49</text>
+    <text class="label" x="227" y="129">pull requests</text>
+  </g>
+  <g>
+    <rect class="panel" x="24" y="158" width="183" height="64" rx="8" />
+    <text class="metric" x="38" y="186" style="font-size:22px">11</text>
+    <text class="label" x="38" y="207">reviews</text>
+  </g>
+  <g>
+    <rect class="panel" x="213" y="158" width="183" height="64" rx="8" />
+    <text class="metric" x="227" y="186" style="font-size:22px">12</text>
+    <text class="label" x="227" y="207">active days</text>
+  </g>
+  <g>
+    <rect x="32" y="342.0" width="19" height="2.0" rx="4" fill="#2f81f7" />
+    <text class="muted" x="41.5" y="361" text-anchor="middle" style="font-size:9px">Aug</text>
+  </g>
+  <g>
+    <rect x="61" y="342.0" width="19" height="2.0" rx="4" fill="#2f81f7" />
+    <text class="muted" x="70.5" y="361" text-anchor="middle" style="font-size:9px">Sep</text>
+  </g>
+  <g>
+    <rect x="90" y="342.0" width="19" height="2.0" rx="4" fill="#2f81f7" />
+    <text class="muted" x="99.5" y="361" text-anchor="middle" style="font-size:9px">Oct</text>
+  </g>
+  <g>
+    <rect x="119" y="342.0" width="19" height="2.0" rx="4" fill="#2f81f7" />
+    <text class="muted" x="128.5" y="361" text-anchor="middle" style="font-size:9px">Nov</text>
+  </g>
+  <g>
+    <rect x="148" y="342.0" width="19" height="2.0" rx="4" fill="#2f81f7" />
+    <text class="muted" x="157.5" y="361" text-anchor="middle" style="font-size:9px">Dec</text>
+  </g>
+  <g>
+    <rect x="177" y="342.0" width="19" height="2.0" rx="4" fill="#2f81f7" />
+    <text class="muted" x="186.5" y="361" text-anchor="middle" style="font-size:9px">Jan</text>
+  </g>
+  <g>
+    <rect x="206" y="342.0" width="19" height="2.0" rx="4" fill="#2f81f7" />
+    <text class="muted" x="215.5" y="361" text-anchor="middle" style="font-size:9px">Feb</text>
+  </g>
+  <g>
+    <rect x="235" y="342.0" width="19" height="2.0" rx="4" fill="#2f81f7" />
+    <text class="muted" x="244.5" y="361" text-anchor="middle" style="font-size:9px">Mar</text>
+  </g>
+  <g>
+    <rect x="264" y="342.0" width="19" height="2.0" rx="4" fill="#2f81f7" />
+    <text class="muted" x="273.5" y="361" text-anchor="middle" style="font-size:9px">Apr</text>
+  </g>
+  <g>
+    <rect x="293" y="342.0" width="19" height="2.0" rx="4" fill="#2f81f7" />
+    <text class="muted" x="302.5" y="361" text-anchor="middle" style="font-size:9px">May</text>
+  </g>
+  <g>
+    <rect x="322" y="327.8" width="19" height="16.2" rx="4" fill="#2f81f7" />
+    <text class="muted" x="331.5" y="361" text-anchor="middle" style="font-size:9px">Jun</text>
+  </g>
+  <g>
+    <rect x="351" y="252.0" width="19" height="92.0" rx="4" fill="#2f81f7" />
+    <text class="muted" x="360.5" y="361" text-anchor="middle" style="font-size:9px">Jul</text>
+  </g>
+  <text class="muted" x="396" y="410" text-anchor="end">Updated 2026-07-10</text>
+</svg>

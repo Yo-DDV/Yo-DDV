@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="816" viewBox="0 0 420 816" role="img" aria-labelledby="title desc">
+  <title id="title">Yoan De Vermont infrastructure capability map for mobile screens</title>
+  <desc id="desc">A vertically stacked view of verified working areas across systems, networks, service edge, platforms and automation.</desc>
+  <style>
+    .bg { fill: #ffffff; stroke: #d0d7de; }
+    .panel { fill: #f6f8fa; stroke: #d8dee4; }
+    .title { fill: #1f2328; font: 700 22px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .subtitle { fill: #636c76; font: 400 13px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .metric { fill: #1f2328; font: 700 25px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .label { fill: #636c76; font: 500 12px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .body { fill: #1f2328; font: 500 13px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .muted { fill: #636c76; font: 400 11px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #0d1117; stroke: #30363d; }
+      .panel { fill: #161b22; stroke: #30363d; }
+      .title, .metric, .body { fill: #f0f6fc; }
+      .subtitle, .label, .muted { fill: #8b949e; }
+    }
+  </style>
+  <rect class="bg" x="0.5" y="0.5" width="419" height="815" rx="8" />
+  <text class="title" x="24" y="38" style="font-size:20px">Infrastructure capability map</text>
+  <text class="subtitle" x="24" y="60">Systems, networks, platforms and automation</text>
+  <g>
+    <rect class="panel" x="24" y="82" width="372" height="128" rx="8" />
+    <rect x="24" y="82" width="372" height="4" rx="2" fill="#2f81f7" />
+    <text class="title" x="42" y="113" style="font-size:16px">Systems</text>
+    <circle cx="44" cy="133" r="3" fill="#2f81f7" />
+    <text class="body" x="56" y="137">Linux service operations</text>
+    <circle cx="44" cy="152" r="3" fill="#2f81f7" />
+    <text class="body" x="56" y="156">Windows Server administration</text>
+    <circle cx="44" cy="171" r="3" fill="#2f81f7" />
+    <text class="body" x="56" y="175">OS hardening and patching</text>
+    <circle cx="44" cy="190" r="3" fill="#2f81f7" />
+    <text class="body" x="56" y="194">Recovery-focused maintenance</text>
+  </g>
+  <g>
+    <rect class="panel" x="24" y="228" width="372" height="128" rx="8" />
+    <rect x="24" y="228" width="372" height="4" rx="2" fill="#3fb950" />
+    <text class="title" x="42" y="259" style="font-size:16px">Networks</text>
+    <circle cx="44" cy="279" r="3" fill="#3fb950" />
+    <text class="body" x="56" y="283">Cisco switching and routing</text>
+    <circle cx="44" cy="298" r="3" fill="#3fb950" />
+    <text class="body" x="56" y="302">Palo Alto policy review</text>
+    <circle cx="44" cy="317" r="3" fill="#3fb950" />
+    <text class="body" x="56" y="321">VLANs, trunks and ACL design</text>
+    <circle cx="44" cy="336" r="3" fill="#3fb950" />
+    <text class="body" x="56" y="340">Traffic-flow troubleshooting</text>
+  </g>
+  <g>
+    <rect class="panel" x="24" y="374" width="372" height="128" rx="8" />
+    <rect x="24" y="374" width="372" height="4" rx="2" fill="#d29922" />
+    <text class="title" x="42" y="405" style="font-size:16px">Service edge</text>
+    <circle cx="44" cy="425" r="3" fill="#d29922" />
+    <text class="body" x="56" y="429">HAProxy, Nginx and Caddy</text>
+    <circle cx="44" cy="444" r="3" fill="#d29922" />
+    <text class="body" x="56" y="448">Traefik and Cloudflare edge</text>
+    <circle cx="44" cy="463" r="3" fill="#d29922" />
+    <text class="body" x="56" y="467">IPsec, WireGuard and OpenVPN</text>
+    <circle cx="44" cy="482" r="3" fill="#d29922" />
+    <text class="body" x="56" y="486">TLS, DNS and WAF exposure</text>
+  </g>
+  <g>
+    <rect class="panel" x="24" y="520" width="372" height="128" rx="8" />
+    <rect x="24" y="520" width="372" height="4" rx="2" fill="#a371f7" />
+    <text class="title" x="42" y="551" style="font-size:16px">Platforms</text>
+    <circle cx="44" cy="571" r="3" fill="#a371f7" />
+    <text class="body" x="56" y="575">Proxmox and VMware estates</text>
+    <circle cx="44" cy="590" r="3" fill="#a371f7" />
+    <text class="body" x="56" y="594">OpenWrt router operations</text>
+    <circle cx="44" cy="609" r="3" fill="#a371f7" />
+    <text class="body" x="56" y="613">Docker and Nextcloud stacks</text>
+    <circle cx="44" cy="628" r="3" fill="#a371f7" />
+    <text class="body" x="56" y="632">VPS hosting and backups</text>
+  </g>
+  <g>
+    <rect class="panel" x="24" y="666" width="372" height="128" rx="8" />
+    <rect x="24" y="666" width="372" height="4" rx="2" fill="#f85149" />
+    <text class="title" x="42" y="697" style="font-size:16px">Automation</text>
+    <circle cx="44" cy="717" r="3" fill="#f85149" />
+    <text class="body" x="56" y="721">Ansible automation</text>
+    <circle cx="44" cy="736" r="3" fill="#f85149" />
+    <text class="body" x="56" y="740">Bash tooling</text>
+    <circle cx="44" cy="755" r="3" fill="#f85149" />
+    <text class="body" x="56" y="759">Python scripting</text>
+    <circle cx="44" cy="774" r="3" fill="#f85149" />
+    <text class="body" x="56" y="778">GitHub Actions CI</text>
+  </g>
+</svg>

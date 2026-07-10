@@ -1,0 +1,13 @@
+{
+  "name": "yo-ddv-profile",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate": "node scripts/generate-profile.mjs",
+    "preview": "node scripts/render-preview.mjs",
+    "test": "node --test scripts/generate-profile.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
