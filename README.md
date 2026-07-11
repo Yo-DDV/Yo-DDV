@@ -1,6 +1,6 @@
 <div align="center">
 
-# Yoan De Vermont
+# Yoan
 
 **Systems and Network Administrator | Network & Security Operations | IT Project Management**
 
