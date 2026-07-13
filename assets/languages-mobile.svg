@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="420" height="410" viewBox="0 0 420 410" role="img" aria-labelledby="title desc">
   <title id="title">Public automation and code mix for mobile screens</title>
-  <desc id="desc">A mobile-friendly language mix derived from 98 merged public pull requests over the trailing twelve months.</desc>
+  <desc id="desc">A mobile-friendly language mix derived from 99 merged public pull requests over the trailing twelve months.</desc>
   <style>
     .bg { fill: #ffffff; stroke: #d0d7de; }
     .panel { fill: #f6f8fa; stroke: #d8dee4; }
@@ -20,12 +20,12 @@
   <rect class="bg" x="0.5" y="0.5" width="419" height="409" rx="8" />
   <text class="title" x="24" y="38" style="font-size:20px">Public automation and code mix</text>
   <text class="subtitle" x="24" y="60">Changed lines in merged public pull requests</text>
-  <rect x="24.00" y="86" width="190.90" height="22" fill="#f1e05a" />
-  <rect x="214.90" y="86" width="104.69" height="22" fill="#dea584" />
-  <rect x="319.59" y="86" width="42.04" height="22" fill="#89e051" />
-  <rect x="361.63" y="86" width="16.24" height="22" fill="#3178c6" />
-  <rect x="377.86" y="86" width="9.76" height="22" fill="#7e7eff" />
-  <rect x="387.62" y="86" width="7.57" height="22" fill="#cb171e" />
+  <rect x="24.00" y="86" width="190.89" height="22" fill="#f1e05a" />
+  <rect x="214.89" y="86" width="104.68" height="22" fill="#dea584" />
+  <rect x="319.58" y="86" width="42.04" height="22" fill="#89e051" />
+  <rect x="361.61" y="86" width="16.24" height="22" fill="#3178c6" />
+  <rect x="377.85" y="86" width="9.75" height="22" fill="#7e7eff" />
+  <rect x="387.60" y="86" width="7.58" height="22" fill="#cb171e" />
   <rect x="395.19" y="86" width="1.00" height="22" fill="#8c959f" />
   <g>
     <circle cx="30" cy="140" r="6" fill="#f1e05a" />
@@ -55,7 +55,7 @@
   <g>
     <circle cx="30" cy="290" r="6" fill="#cb171e" />
     <text class="body" x="44" y="294">YAML</text>
-    <text class="label" x="396" y="294" text-anchor="end">2.0% / 474 lines</text>
+    <text class="label" x="396" y="294" text-anchor="end">2.0% / 475 lines</text>
   </g>
   <g>
     <circle cx="30" cy="320" r="6" fill="#8c959f" />
