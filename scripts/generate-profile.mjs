@@ -9,6 +9,7 @@ const ASSET_DIR = path.join(ROOT_DIR, "assets");
 const CONFIG_PATH = path.join(ROOT_DIR, "profile.config.json");
 const API_ROOT = "https://api.github.com";
 const MAX_PAGES = 10;
+const SEARCH_PAGE_SIZE = 100;
 const REQUEST_CONCURRENCY = 4;
 
 const LANGUAGE_COLORS = {
@@ -599,25 +600,72 @@ async function fetchPages(url, authHeader, maxPages = MAX_PAGES) {
   return items;
 }
 
-async function fetchMergedPullRequests(username, authHeader, fromDate) {
-  const query = `is:pr is:merged author:${username} merged:>=${fromDate}`;
-  const response = await githubRequest(`/search/issues?q=${encodeURIComponent(query)}&per_page=100`, { authHeader });
-  if (response.data.total_count > 100) {
-    throw new Error("More than 100 merged pull requests matched; pagination support is required before continuing");
+export async function fetchMergedPullRequests(
+  username,
+  authHeader,
+  fromDate,
+  { request = githubRequest, maxPages = MAX_PAGES } = {}
+) {
+  const query = `is:pr is:merged is:public author:${username} merged:>=${fromDate}`;
+  const pullRequests = [];
+  const seen = new Set();
+  let expectedCount = null;
+
+  for (let page = 1; page <= maxPages; page += 1) {
+    const response = await request(
+      `/search/issues?q=${encodeURIComponent(query)}&per_page=${SEARCH_PAGE_SIZE}&page=${page}`,
+      { authHeader }
+    );
+    const payload = response.data;
+    if (
+      !payload ||
+      !Number.isInteger(payload.total_count) ||
+      payload.total_count < 0 ||
+      !Array.isArray(payload.items)
+    ) {
+      throw new Error("Unexpected response returned by GitHub pull request search");
+    }
+    if (payload.incomplete_results) {
+      throw new Error("GitHub pull request search returned incomplete results");
+    }
+    if (payload.total_count > maxPages * SEARCH_PAGE_SIZE) {
+      throw new Error(
+        `More than ${maxPages * SEARCH_PAGE_SIZE} merged pull requests matched; narrow or partition the search window`
+      );
+    }
+    expectedCount ??= payload.total_count;
+
+    for (const item of payload.items) {
+      const repositoryUrl = new URL(item.repository_url);
+      if (
+        repositoryUrl.origin !== API_ROOT ||
+        !/^\/repos\/[^/]+\/[^/]+$/.test(repositoryUrl.pathname) ||
+        repositoryUrl.search ||
+        repositoryUrl.hash
+      ) {
+        throw new Error("Unexpected repository URL returned by GitHub search");
+      }
+      if (!Number.isInteger(item.number) || item.number <= 0) {
+        throw new Error("Unexpected pull request number returned by GitHub search");
+      }
+      const key = `${repositoryUrl.pathname}#${item.number}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      pullRequests.push({
+        number: item.number,
+        filesUrl: `${repositoryUrl.pathname}/pulls/${item.number}/files?per_page=100`
+      });
+    }
+
+    if (pullRequests.length >= expectedCount) return pullRequests;
+    if (payload.items.length < SEARCH_PAGE_SIZE) {
+      throw new Error(
+        `GitHub pull request search ended after ${pullRequests.length} of ${expectedCount} results`
+      );
+    }
   }
-  return response.data.items.map((item) => {
-    const repositoryUrl = new URL(item.repository_url);
-    if (repositoryUrl.origin !== API_ROOT || !repositoryUrl.pathname.startsWith("/repos/")) {
-      throw new Error("Unexpected repository URL returned by GitHub search");
-    }
-    if (!Number.isInteger(item.number) || item.number <= 0) {
-      throw new Error("Unexpected pull request number returned by GitHub search");
-    }
-    return {
-      number: item.number,
-      filesUrl: `${repositoryUrl.pathname}/pulls/${item.number}/files?per_page=100`
-    };
-  });
+
+  throw new Error(`GitHub pull request search exceeded the ${maxPages}-page safety limit`);
 }
 
 async function mapWithConcurrency(items, concurrency, mapper) {

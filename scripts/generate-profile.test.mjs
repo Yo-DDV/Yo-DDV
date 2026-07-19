@@ -8,6 +8,7 @@ import {
   aggregateLanguageChanges,
   assertUsername,
   escapeXml,
+  fetchMergedPullRequests,
   languageForPath,
   normalizeSnapshotDate,
   renderActivitySvg,
@@ -31,6 +32,107 @@ test("assertUsername accepts GitHub names and rejects unsafe input", () => {
   assert.equal(assertUsername("Yo-DDV"), "Yo-DDV");
   assert.throws(() => assertUsername("../owner"), /Invalid GitHub username/);
   assert.throws(() => assertUsername("owner--name"), /Invalid GitHub username/);
+});
+
+function searchItem(repository, number) {
+  return {
+    number,
+    repository_url: `https://api.github.com/repos/${repository}`
+  };
+}
+
+test("fetchMergedPullRequests paginates complete GitHub search results", async () => {
+  const calls = [];
+  const firstPage = [
+    searchItem("Yo-DDV/Towk", 1),
+    searchItem("ilysenko/codex-desktop-linux", 2),
+    ...Array.from({ length: 98 }, (_, index) => searchItem("owner/repo", index + 3))
+  ];
+  const secondPage = Array.from({ length: 26 }, (_, index) => searchItem("owner/repo", index + 101));
+  const request = async (url) => {
+    calls.push(url);
+    return {
+      data: {
+        total_count: 126,
+        incomplete_results: false,
+        items: calls.length === 1 ? firstPage : secondPage
+      }
+    };
+  };
+
+  const pullRequests = await fetchMergedPullRequests(
+    "Yo-DDV",
+    "test-token",
+    "2025-07-19",
+    { request }
+  );
+
+  assert.equal(pullRequests.length, 126);
+  assert.equal(calls.length, 2);
+  assert.match(decodeURIComponent(calls[0]), /is:public author:Yo-DDV/);
+  assert.match(calls[0], /per_page=100&page=1$/);
+  assert.match(calls[1], /per_page=100&page=2$/);
+  assert.equal(pullRequests[0].filesUrl, "/repos/Yo-DDV/Towk/pulls/1/files?per_page=100");
+  assert.equal(
+    pullRequests[1].filesUrl,
+    "/repos/ilysenko/codex-desktop-linux/pulls/2/files?per_page=100"
+  );
+  assert.equal(pullRequests.at(-1).filesUrl, "/repos/owner/repo/pulls/126/files?per_page=100");
+});
+
+test("fetchMergedPullRequests rejects incomplete GitHub search results", async () => {
+  const request = async () => ({
+    data: { total_count: 1, incomplete_results: true, items: [searchItem("owner/repo", 1)] }
+  });
+
+  await assert.rejects(
+    fetchMergedPullRequests("Yo-DDV", "test-token", "2025-07-19", { request }),
+    /returned incomplete results/
+  );
+});
+
+test("fetchMergedPullRequests enforces its bounded pagination limit", async () => {
+  const request = async () => ({
+    data: { total_count: 1001, incomplete_results: false, items: [] }
+  });
+
+  await assert.rejects(
+    fetchMergedPullRequests("Yo-DDV", "test-token", "2025-07-19", { request }),
+    /More than 1000 merged pull requests matched/
+  );
+});
+
+test("fetchMergedPullRequests rejects an early partial page", async () => {
+  const request = async () => ({
+    data: { total_count: 2, incomplete_results: false, items: [searchItem("owner/repo", 1)] }
+  });
+
+  await assert.rejects(
+    fetchMergedPullRequests("Yo-DDV", "test-token", "2025-07-19", { request }),
+    /ended after 1 of 2 results/
+  );
+});
+
+test("fetchMergedPullRequests rejects malformed counters and repository URLs", async () => {
+  const negativeCount = async () => ({
+    data: { total_count: -1, incomplete_results: false, items: [] }
+  });
+  await assert.rejects(
+    fetchMergedPullRequests("Yo-DDV", "test-token", "2025-07-19", { request: negativeCount }),
+    /Unexpected response/
+  );
+
+  const foreignRepository = async () => ({
+    data: {
+      total_count: 1,
+      incomplete_results: false,
+      items: [{ number: 1, repository_url: "https://example.com/repos/owner/repo" }]
+    }
+  });
+  await assert.rejects(
+    fetchMergedPullRequests("Yo-DDV", "test-token", "2025-07-19", { request: foreignRepository }),
+    /Unexpected repository URL/
+  );
 });
 
 test("languageForPath classifies automation files and excludes generated content", () => {
