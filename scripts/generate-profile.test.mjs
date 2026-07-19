@@ -17,7 +17,8 @@ import {
   renderCapabilitiesMobileSvg,
   renderLanguagesSvg,
   renderLanguagesMobileSvg,
-  summarizeLanguages
+  summarizeLanguages,
+  withProfileCardCacheToken
 } from "./generate-profile.mjs";
 import { buildPreviewHtml } from "./render-preview.mjs";
 
@@ -282,6 +283,41 @@ test("README prose avoids hard-wrapped paragraphs that GitHub renders as visible
   if (currentRun.length > 1) plainRuns.push([...currentRun]);
 
   assert.deepEqual(plainRuns, []);
+});
+
+test("profile card cache token changes every generated card URL", () => {
+  const readme = [
+    'srcset="assets/capabilities-mobile.svg"',
+    'src="assets/capabilities.svg?v=000000000000"',
+    'srcset="assets/activity-mobile.svg"',
+    'src="assets/activity.svg?v=000000000000"',
+    'srcset="assets/languages-mobile.svg"',
+    'src="assets/languages.svg?v=ffffffffffff"'
+  ].join("\n");
+
+  const updated = withProfileCardCacheToken(readme, "123456789abc");
+  assert.equal((updated.match(/\?v=123456789abc/g) || []).length, 6);
+  assert.doesNotMatch(updated, /000000000000|ffffffffffff/);
+});
+
+test("profile card cache token rejects malformed input and incomplete README markup", () => {
+  assert.throws(
+    () => withProfileCardCacheToken("assets/activity.svg", "not-a-token"),
+    /12 lowercase hexadecimal/
+  );
+  assert.throws(
+    () => withProfileCardCacheToken("assets/activity.svg", "123456789abc"),
+    /Expected six profile card references/
+  );
+});
+
+test("refresh workflow commits cache-busted README with generated assets", () => {
+  const workflow = readFileSync(
+    fileURLToPath(new URL("../.github/workflows/refresh-profile.yml", import.meta.url)),
+    "utf8"
+  );
+  assert.match(workflow, /git diff --quiet -- README\.md assets/);
+  assert.match(workflow, /git add -- README\.md assets\/\*\.svg/);
 });
 
 test("preview HTML wraps GitHub-rendered markdown with document CSS", () => {

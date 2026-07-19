@@ -1,4 +1,5 @@
 import { readFile, mkdir, writeFile } from "node:fs/promises";
+import { createHash } from "node:crypto";
 import path from "node:path";
 import process from "node:process";
 import { fileURLToPath } from "node:url";
@@ -7,10 +8,12 @@ const SCRIPT_DIR = path.dirname(fileURLToPath(import.meta.url));
 const ROOT_DIR = path.resolve(SCRIPT_DIR, "..");
 const ASSET_DIR = path.join(ROOT_DIR, "assets");
 const CONFIG_PATH = path.join(ROOT_DIR, "profile.config.json");
+const README_PATH = path.join(ROOT_DIR, "README.md");
 const API_ROOT = "https://api.github.com";
 const MAX_PAGES = 10;
 const SEARCH_PAGE_SIZE = 100;
 const REQUEST_CONCURRENCY = 4;
+const PROFILE_CARD_PATTERN = /assets\/(capabilities|activity|languages)(-mobile)?\.svg(?:\?v=[a-f0-9]{12})?/g;
 
 const LANGUAGE_COLORS = {
   JavaScript: "#f1e05a",
@@ -697,6 +700,23 @@ async function loadConfig() {
   return parsed;
 }
 
+export function withProfileCardCacheToken(readme, cacheToken) {
+  if (!/^[a-f0-9]{12}$/.test(cacheToken)) {
+    throw new Error("Profile card cache token must be 12 lowercase hexadecimal characters");
+  }
+
+  let replacementCount = 0;
+  const updatedReadme = readme.replace(PROFILE_CARD_PATTERN, (assetPath) => {
+    replacementCount += 1;
+    return `${assetPath.split("?")[0]}?v=${cacheToken}`;
+  });
+
+  if (replacementCount !== 6) {
+    throw new Error(`Expected six profile card references in README.md, found ${replacementCount}`);
+  }
+  return updatedReadme;
+}
+
 export async function generateProfileAssets({ authHeader, now = new Date() }) {
   if (!authHeader) throw new Error("Set GITHUB_TOKEN or GH_TOKEN to generate live profile metrics");
   const config = await loadConfig();
@@ -729,11 +749,23 @@ export async function generateProfileAssets({ authHeader, now = new Date() }) {
     writeFile(path.join(ASSET_DIR, name), content, { encoding: "utf8", mode: 0o644 })
   ));
 
+  const cacheHash = createHash("sha256");
+  for (const name of Object.keys(assets).sort()) {
+    cacheHash.update(name).update("\0").update(assets[name]);
+  }
+  const cacheToken = cacheHash.digest("hex").slice(0, 12);
+  const readme = await readFile(README_PATH, "utf8");
+  const updatedReadme = withProfileCardCacheToken(readme, cacheToken);
+  if (updatedReadme !== readme) {
+    await writeFile(README_PATH, updatedReadme, { encoding: "utf8", mode: 0o644 });
+  }
+
   return {
     username,
     from,
     to,
     pullRequestCount: pullRequests.length,
+    cacheToken,
     languageEntries,
     assetNames: Object.keys(assets)
   };
