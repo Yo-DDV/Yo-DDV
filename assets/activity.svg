@@ -22,7 +22,7 @@
   <text class="subtitle" x="28" y="60">Trailing twelve months of public GitHub data</text>
   <g>
     <rect class="panel" x="28" y="78" width="196" height="70" rx="8" />
-    <text class="metric" x="44" y="108">484</text>
+    <text class="metric" x="44" y="108">485</text>
     <text class="label" x="44" y="132">public contributions</text>
   </g>
   <g>
