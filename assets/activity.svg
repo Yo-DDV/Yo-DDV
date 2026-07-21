@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300" role="img" aria-labelledby="title desc">
   <title id="title">Trailing twelve-month public GitHub activity</title>
-  <desc id="desc">Public contribution activity for Yo-DDV from 2025-07-20 through 2026-07-20.</desc>
+  <desc id="desc">Public contribution activity for Yo-DDV from 2025-07-21 through 2026-07-21.</desc>
   <style>
     .bg { fill: #ffffff; stroke: #d0d7de; }
     .panel { fill: #f6f8fa; stroke: #d8dee4; }
@@ -88,5 +88,5 @@
     <rect x="816" y="174.0" width="44" height="76.0" rx="4" fill="#2f81f7" />
     <text class="muted" x="838" y="268" text-anchor="middle">Jul</text>
   </g>
-  <text class="muted" x="872" y="286" text-anchor="end">Updated 2026-07-20</text>
+  <text class="muted" x="872" y="286" text-anchor="end">Updated 2026-07-21</text>
 </svg>
