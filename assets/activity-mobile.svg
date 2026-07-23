@@ -22,12 +22,12 @@
   <text class="subtitle" x="24" y="60">Trailing twelve months of public GitHub data</text>
   <g>
     <rect class="panel" x="24" y="80" width="183" height="64" rx="8" />
-    <text class="metric" x="38" y="108" style="font-size:22px">541</text>
+    <text class="metric" x="38" y="108" style="font-size:22px">559</text>
     <text class="label" x="38" y="129">public contributions</text>
   </g>
   <g>
     <rect class="panel" x="213" y="80" width="183" height="64" rx="8" />
-    <text class="metric" x="227" y="108" style="font-size:22px">165</text>
+    <text class="metric" x="227" y="108" style="font-size:22px">175</text>
     <text class="label" x="227" y="129">pull requests</text>
   </g>
   <g>
