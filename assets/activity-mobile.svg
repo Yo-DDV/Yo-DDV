@@ -22,12 +22,12 @@
   <text class="subtitle" x="24" y="60">Trailing twelve months of public GitHub data</text>
   <g>
     <rect class="panel" x="24" y="80" width="183" height="64" rx="8" />
-    <text class="metric" x="38" y="108" style="font-size:22px">559</text>
+    <text class="metric" x="38" y="108" style="font-size:22px">566</text>
     <text class="label" x="38" y="129">public contributions</text>
   </g>
   <g>
     <rect class="panel" x="213" y="80" width="183" height="64" rx="8" />
-    <text class="metric" x="227" y="108" style="font-size:22px">175</text>
+    <text class="metric" x="227" y="108" style="font-size:22px">179</text>
     <text class="label" x="227" y="129">pull requests</text>
   </g>
   <g>
@@ -37,7 +37,7 @@
   </g>
   <g>
     <rect class="panel" x="213" y="158" width="183" height="64" rx="8" />
-    <text class="metric" x="227" y="186" style="font-size:22px">25</text>
+    <text class="metric" x="227" y="186" style="font-size:22px">26</text>
     <text class="label" x="227" y="207">active days</text>
   </g>
   <g>
@@ -88,5 +88,5 @@
     <rect x="351" y="252.0" width="19" height="92.0" rx="4" fill="#2f81f7" />
     <text class="muted" x="360.5" y="361" text-anchor="middle" style="font-size:9px">Jul</text>
   </g>
-  <text class="muted" x="396" y="410" text-anchor="end">Updated 2026-07-23</text>
+  <text class="muted" x="396" y="410" text-anchor="end">Updated 2026-07-24</text>
 </svg>
