@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="420" height="380" viewBox="0 0 420 380" role="img" aria-labelledby="title desc">
   <title id="title">Public automation and code mix for mobile screens</title>
-  <desc id="desc">A mobile-friendly language mix derived from 149 merged public pull requests over the trailing twelve months.</desc>
+  <desc id="desc">A mobile-friendly language mix derived from 150 merged public pull requests over the trailing twelve months.</desc>
   <style>
     .bg { fill: #ffffff; stroke: #d0d7de; }
     .panel { fill: #f6f8fa; stroke: #d8dee4; }
@@ -20,16 +20,16 @@
   <rect class="bg" x="0.5" y="0.5" width="419" height="379" rx="8" />
   <text class="title" x="24" y="38" style="font-size:20px">Public automation and code mix</text>
   <text class="subtitle" x="24" y="60">Changed lines in merged public pull requests</text>
-  <rect x="24.00" y="86" width="197.18" height="22" fill="#3178c6" />
-  <rect x="221.18" y="86" width="102.76" height="22" fill="#f1e05a" />
-  <rect x="323.94" y="86" width="39.19" height="22" fill="#dea584" />
-  <rect x="363.13" y="86" width="18.87" height="22" fill="#89e051" />
-  <rect x="382.00" y="86" width="8.93" height="22" fill="#cb171e" />
-  <rect x="390.93" y="86" width="5.07" height="22" fill="#8c959f" />
+  <rect x="24.00" y="86" width="197.24" height="22" fill="#3178c6" />
+  <rect x="221.24" y="86" width="102.61" height="22" fill="#f1e05a" />
+  <rect x="323.85" y="86" width="39.13" height="22" fill="#dea584" />
+  <rect x="362.99" y="86" width="18.84" height="22" fill="#89e051" />
+  <rect x="381.82" y="86" width="8.92" height="22" fill="#cb171e" />
+  <rect x="390.74" y="86" width="5.26" height="22" fill="#8c959f" />
   <g>
     <circle cx="30" cy="140" r="6" fill="#3178c6" />
     <text class="body" x="44" y="144">TypeScript</text>
-    <text class="label" x="396" y="144" text-anchor="end">53.0% / 34,543 lines</text>
+    <text class="label" x="396" y="144" text-anchor="end">53.0% / 34,606 lines</text>
   </g>
   <g>
     <circle cx="30" cy="170" r="6" fill="#f1e05a" />
@@ -54,7 +54,7 @@
   <g>
     <circle cx="30" cy="290" r="6" fill="#8c959f" />
     <text class="body" x="44" y="294">Other</text>
-    <text class="label" x="396" y="294" text-anchor="end">1.4% / 888 lines</text>
+    <text class="label" x="396" y="294" text-anchor="end">1.4% / 922 lines</text>
   </g>
   <text class="muted" x="24" y="364">Activity, not a proficiency score. Exclusions match the desktop chart.</text>
 </svg>
