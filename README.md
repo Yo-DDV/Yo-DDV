@@ -12,8 +12,8 @@ Linux infrastructure / Cisco and Palo Alto operations / VPNs / Proxmox / Docker 
 
 <p align="center">
   <picture>
-    <source media="(max-width: 600px)" srcset="assets/capabilities-mobile.svg?v=f1926108f2ef" />
-    <img src="assets/capabilities.svg?v=f1926108f2ef" width="100%" alt="Capability map covering systems, networks, service edge, platforms and automation" />
+    <source media="(max-width: 600px)" srcset="assets/capabilities-mobile.svg?v=7d33a751dc84" />
+    <img src="assets/capabilities.svg?v=7d33a751dc84" width="100%" alt="Capability map covering systems, networks, service edge, platforms and automation" />
   </picture>
 </p>
 
@@ -39,15 +39,15 @@ Linux infrastructure / Cisco and Palo Alto operations / VPNs / Proxmox / Docker 
 
 <p align="center">
   <picture>
-    <source media="(max-width: 600px)" srcset="assets/activity-mobile.svg?v=f1926108f2ef" />
-    <img src="assets/activity.svg?v=f1926108f2ef" width="100%" alt="Trailing twelve-month public GitHub activity" />
+    <source media="(max-width: 600px)" srcset="assets/activity-mobile.svg?v=7d33a751dc84" />
+    <img src="assets/activity.svg?v=7d33a751dc84" width="100%" alt="Trailing twelve-month public GitHub activity" />
   </picture>
 </p>
 
 <p align="center">
   <picture>
-    <source media="(max-width: 600px)" srcset="assets/languages-mobile.svg?v=f1926108f2ef" />
-    <img src="assets/languages.svg?v=f1926108f2ef" width="100%" alt="Code and automation languages in merged public pull requests" />
+    <source media="(max-width: 600px)" srcset="assets/languages-mobile.svg?v=7d33a751dc84" />
+    <img src="assets/languages.svg?v=7d33a751dc84" width="100%" alt="Code and automation languages in merged public pull requests" />
   </picture>
 </p>
 
