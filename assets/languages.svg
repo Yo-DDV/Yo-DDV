@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="270" viewBox="0 0 900 270" role="img" aria-labelledby="title desc">
   <title id="title">Public automation and code mix</title>
-  <desc id="desc">Language mix derived from 203 merged public pull requests over the trailing twelve months.</desc>
+  <desc id="desc">Language mix derived from 205 merged public pull requests over the trailing twelve months.</desc>
   <style>
     .bg { fill: #ffffff; stroke: #d0d7de; }
     .panel { fill: #f6f8fa; stroke: #d8dee4; }
@@ -20,47 +20,47 @@
   <rect class="bg" x="0.5" y="0.5" width="899" height="269" rx="8" />
   <text class="title" x="28" y="38">Public automation and code mix</text>
   <text class="subtitle" x="28" y="60">Changed lines in merged public pull requests / trailing twelve months</text>
-  <rect x="28.00" y="86" width="508.12" height="22" fill="#3178c6" />
-  <rect x="536.12" y="86" width="174.44" height="22" fill="#f1e05a" />
-  <rect x="710.56" y="86" width="54.77" height="22" fill="#dea584" />
-  <rect x="765.33" y="86" width="37.28" height="22" fill="#3572a5" />
-  <rect x="802.61" y="86" width="31.68" height="22" fill="#89e051" />
-  <rect x="834.29" y="86" width="14.62" height="22" fill="#cb171e" />
-  <rect x="848.91" y="86" width="23.09" height="22" fill="#8c959f" />
+  <rect x="28.00" y="86" width="512.89" height="22" fill="#3178c6" />
+  <rect x="540.89" y="86" width="170.15" height="22" fill="#f1e05a" />
+  <rect x="711.04" y="86" width="53.42" height="22" fill="#dea584" />
+  <rect x="764.46" y="86" width="36.36" height="22" fill="#3572a5" />
+  <rect x="800.82" y="86" width="30.90" height="22" fill="#89e051" />
+  <rect x="831.72" y="86" width="17.72" height="22" fill="#563d7c" />
+  <rect x="849.44" y="86" width="22.56" height="22" fill="#8c959f" />
   <g>
     <circle cx="34" cy="138" r="6" fill="#3178c6" />
     <text class="body" x="48" y="142">TypeScript</text>
-    <text class="label" x="426" y="142" text-anchor="end">60.2% / 63,697 lines</text>
+    <text class="label" x="426" y="142" text-anchor="end">60.8% / 65,919 lines</text>
   </g>
   <g>
     <circle cx="456" cy="138" r="6" fill="#f1e05a" />
     <text class="body" x="470" y="142">JavaScript</text>
-    <text class="label" x="848" y="142" text-anchor="end">20.7% / 21,868 lines</text>
+    <text class="label" x="848" y="142" text-anchor="end">20.2% / 21,868 lines</text>
   </g>
   <g>
     <circle cx="34" cy="168" r="6" fill="#dea584" />
     <text class="body" x="48" y="172">Rust</text>
-    <text class="label" x="426" y="172" text-anchor="end">6.5% / 6,866 lines</text>
+    <text class="label" x="426" y="172" text-anchor="end">6.3% / 6,866 lines</text>
   </g>
   <g>
     <circle cx="456" cy="168" r="6" fill="#3572a5" />
     <text class="body" x="470" y="172">Python</text>
-    <text class="label" x="848" y="172" text-anchor="end">4.4% / 4,673 lines</text>
+    <text class="label" x="848" y="172" text-anchor="end">4.3% / 4,673 lines</text>
   </g>
   <g>
     <circle cx="34" cy="198" r="6" fill="#89e051" />
     <text class="body" x="48" y="202">Shell</text>
-    <text class="label" x="426" y="202" text-anchor="end">3.8% / 3,972 lines</text>
+    <text class="label" x="426" y="202" text-anchor="end">3.7% / 3,972 lines</text>
   </g>
   <g>
-    <circle cx="456" cy="198" r="6" fill="#cb171e" />
-    <text class="body" x="470" y="202">YAML</text>
-    <text class="label" x="848" y="202" text-anchor="end">1.7% / 1,833 lines</text>
+    <circle cx="456" cy="198" r="6" fill="#563d7c" />
+    <text class="body" x="470" y="202">CSS</text>
+    <text class="label" x="848" y="202" text-anchor="end">2.1% / 2,277 lines</text>
   </g>
   <g>
     <circle cx="34" cy="228" r="6" fill="#8c959f" />
     <text class="body" x="48" y="232">Other</text>
-    <text class="label" x="426" y="232" text-anchor="end">2.7% / 2,894 lines</text>
+    <text class="label" x="426" y="232" text-anchor="end">2.7% / 2,900 lines</text>
   </g>
   <text class="muted" x="28" y="250">Docs, lockfiles, vendored content and generated output are excluded. This is activity, not a proficiency score.</text>
 </svg>

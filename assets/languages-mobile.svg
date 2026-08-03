@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="420" height="410" viewBox="0 0 420 410" role="img" aria-labelledby="title desc">
   <title id="title">Public automation and code mix for mobile screens</title>
-  <desc id="desc">A mobile-friendly language mix derived from 203 merged public pull requests over the trailing twelve months.</desc>
+  <desc id="desc">A mobile-friendly language mix derived from 205 merged public pull requests over the trailing twelve months.</desc>
   <style>
     .bg { fill: #ffffff; stroke: #d0d7de; }
     .panel { fill: #f6f8fa; stroke: #d8dee4; }
@@ -20,47 +20,47 @@
   <rect class="bg" x="0.5" y="0.5" width="419" height="409" rx="8" />
   <text class="title" x="24" y="38" style="font-size:20px">Public automation and code mix</text>
   <text class="subtitle" x="24" y="60">Changed lines in merged public pull requests</text>
-  <rect x="24.00" y="86" width="223.96" height="22" fill="#3178c6" />
-  <rect x="247.96" y="86" width="76.89" height="22" fill="#f1e05a" />
-  <rect x="324.84" y="86" width="24.14" height="22" fill="#dea584" />
-  <rect x="348.98" y="86" width="16.43" height="22" fill="#3572a5" />
-  <rect x="365.41" y="86" width="13.97" height="22" fill="#89e051" />
-  <rect x="379.38" y="86" width="6.44" height="22" fill="#cb171e" />
-  <rect x="385.82" y="86" width="10.18" height="22" fill="#8c959f" />
+  <rect x="24.00" y="86" width="226.06" height="22" fill="#3178c6" />
+  <rect x="250.06" y="86" width="74.99" height="22" fill="#f1e05a" />
+  <rect x="325.05" y="86" width="23.55" height="22" fill="#dea584" />
+  <rect x="348.60" y="86" width="16.03" height="22" fill="#3572a5" />
+  <rect x="364.62" y="86" width="13.62" height="22" fill="#89e051" />
+  <rect x="378.25" y="86" width="7.81" height="22" fill="#563d7c" />
+  <rect x="386.05" y="86" width="9.95" height="22" fill="#8c959f" />
   <g>
     <circle cx="30" cy="140" r="6" fill="#3178c6" />
     <text class="body" x="44" y="144">TypeScript</text>
-    <text class="label" x="396" y="144" text-anchor="end">60.2% / 63,697 lines</text>
+    <text class="label" x="396" y="144" text-anchor="end">60.8% / 65,919 lines</text>
   </g>
   <g>
     <circle cx="30" cy="170" r="6" fill="#f1e05a" />
     <text class="body" x="44" y="174">JavaScript</text>
-    <text class="label" x="396" y="174" text-anchor="end">20.7% / 21,868 lines</text>
+    <text class="label" x="396" y="174" text-anchor="end">20.2% / 21,868 lines</text>
   </g>
   <g>
     <circle cx="30" cy="200" r="6" fill="#dea584" />
     <text class="body" x="44" y="204">Rust</text>
-    <text class="label" x="396" y="204" text-anchor="end">6.5% / 6,866 lines</text>
+    <text class="label" x="396" y="204" text-anchor="end">6.3% / 6,866 lines</text>
   </g>
   <g>
     <circle cx="30" cy="230" r="6" fill="#3572a5" />
     <text class="body" x="44" y="234">Python</text>
-    <text class="label" x="396" y="234" text-anchor="end">4.4% / 4,673 lines</text>
+    <text class="label" x="396" y="234" text-anchor="end">4.3% / 4,673 lines</text>
   </g>
   <g>
     <circle cx="30" cy="260" r="6" fill="#89e051" />
     <text class="body" x="44" y="264">Shell</text>
-    <text class="label" x="396" y="264" text-anchor="end">3.8% / 3,972 lines</text>
+    <text class="label" x="396" y="264" text-anchor="end">3.7% / 3,972 lines</text>
   </g>
   <g>
-    <circle cx="30" cy="290" r="6" fill="#cb171e" />
-    <text class="body" x="44" y="294">YAML</text>
-    <text class="label" x="396" y="294" text-anchor="end">1.7% / 1,833 lines</text>
+    <circle cx="30" cy="290" r="6" fill="#563d7c" />
+    <text class="body" x="44" y="294">CSS</text>
+    <text class="label" x="396" y="294" text-anchor="end">2.1% / 2,277 lines</text>
   </g>
   <g>
     <circle cx="30" cy="320" r="6" fill="#8c959f" />
     <text class="body" x="44" y="324">Other</text>
-    <text class="label" x="396" y="324" text-anchor="end">2.7% / 2,894 lines</text>
+    <text class="label" x="396" y="324" text-anchor="end">2.7% / 2,900 lines</text>
   </g>
   <text class="muted" x="24" y="394">Activity, not a proficiency score. Exclusions match the desktop chart.</text>
 </svg>
