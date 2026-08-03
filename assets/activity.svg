@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300" role="img" aria-labelledby="title desc">
   <title id="title">Trailing twelve-month public GitHub activity</title>
-  <desc id="desc">Public contribution activity for Yo-DDV from 2025-08-03 through 2026-08-02.</desc>
+  <desc id="desc">Public contribution activity for Yo-DDV from 2025-08-03 through 2026-08-03.</desc>
   <style>
     .bg { fill: #ffffff; stroke: #d0d7de; }
     .panel { fill: #f6f8fa; stroke: #d8dee4; }
@@ -22,12 +22,12 @@
   <text class="subtitle" x="28" y="60">Trailing twelve months of public GitHub data</text>
   <g>
     <rect class="panel" x="28" y="78" width="196" height="70" rx="8" />
-    <text class="metric" x="44" y="108">741</text>
+    <text class="metric" x="44" y="108">756</text>
     <text class="label" x="44" y="132">public contributions</text>
   </g>
   <g>
     <rect class="panel" x="240" y="78" width="196" height="70" rx="8" />
-    <text class="metric" x="256" y="108">232</text>
+    <text class="metric" x="256" y="108">235</text>
     <text class="label" x="256" y="132">pull requests</text>
   </g>
   <g>
@@ -37,7 +37,7 @@
   </g>
   <g>
     <rect class="panel" x="664" y="78" width="196" height="70" rx="8" />
-    <text class="metric" x="680" y="108">35</text>
+    <text class="metric" x="680" y="108">36</text>
     <text class="label" x="680" y="132">active days</text>
   </g>
   <g>
@@ -85,8 +85,8 @@
     <text class="muted" x="767" y="268" text-anchor="middle">Jul</text>
   </g>
   <g>
-    <rect x="816" y="241.9" width="44" height="8.1" rx="4" fill="#2f81f7" />
+    <rect x="816" y="240.1" width="44" height="9.9" rx="4" fill="#2f81f7" />
     <text class="muted" x="838" y="268" text-anchor="middle">Aug</text>
   </g>
-  <text class="muted" x="872" y="286" text-anchor="end">Updated 2026-08-02</text>
+  <text class="muted" x="872" y="286" text-anchor="end">Updated 2026-08-03</text>
 </svg>
