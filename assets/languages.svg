@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="270" viewBox="0 0 900 270" role="img" aria-labelledby="title desc">
   <title id="title">Public automation and code mix</title>
-  <desc id="desc">Language mix derived from 220 merged public pull requests over the trailing twelve months.</desc>
+  <desc id="desc">Language mix derived from 223 merged public pull requests over the trailing twelve months.</desc>
   <style>
     .bg { fill: #ffffff; stroke: #d0d7de; }
     .panel { fill: #f6f8fa; stroke: #d8dee4; }
@@ -20,17 +20,17 @@
   <rect class="bg" x="0.5" y="0.5" width="899" height="269" rx="8" />
   <text class="title" x="28" y="38">Public automation and code mix</text>
   <text class="subtitle" x="28" y="60">Changed lines in merged public pull requests / trailing twelve months</text>
-  <rect x="28.00" y="86" width="534.52" height="22" fill="#3178c6" />
-  <rect x="562.52" y="86" width="157.03" height="22" fill="#f1e05a" />
-  <rect x="719.55" y="86" width="49.28" height="22" fill="#dea584" />
-  <rect x="768.83" y="86" width="33.54" height="22" fill="#3572a5" />
-  <rect x="802.37" y="86" width="28.51" height="22" fill="#89e051" />
-  <rect x="830.88" y="86" width="19.73" height="22" fill="#563d7c" />
-  <rect x="850.61" y="86" width="21.39" height="22" fill="#8c959f" />
+  <rect x="28.00" y="86" width="534.81" height="22" fill="#3178c6" />
+  <rect x="562.81" y="86" width="156.88" height="22" fill="#f1e05a" />
+  <rect x="719.69" y="86" width="49.24" height="22" fill="#dea584" />
+  <rect x="768.93" y="86" width="33.51" height="22" fill="#3572a5" />
+  <rect x="802.44" y="86" width="28.48" height="22" fill="#89e051" />
+  <rect x="830.92" y="86" width="19.71" height="22" fill="#563d7c" />
+  <rect x="850.63" y="86" width="21.37" height="22" fill="#8c959f" />
   <g>
     <circle cx="34" cy="138" r="6" fill="#3178c6" />
     <text class="body" x="48" y="142">TypeScript</text>
-    <text class="label" x="426" y="142" text-anchor="end">63.3% / 74,466 lines</text>
+    <text class="label" x="426" y="142" text-anchor="end">63.4% / 74,576 lines</text>
   </g>
   <g>
     <circle cx="456" cy="138" r="6" fill="#f1e05a" />
