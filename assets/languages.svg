@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="270" viewBox="0 0 900 270" role="img" aria-labelledby="title desc">
   <title id="title">Public automation and code mix</title>
-  <desc id="desc">Language mix derived from 232 merged public pull requests over the trailing twelve months.</desc>
+  <desc id="desc">Language mix derived from 233 merged public pull requests over the trailing twelve months.</desc>
   <style>
     .bg { fill: #ffffff; stroke: #d0d7de; }
     .panel { fill: #f6f8fa; stroke: #d8dee4; }
@@ -20,17 +20,17 @@
   <rect class="bg" x="0.5" y="0.5" width="899" height="269" rx="8" />
   <text class="title" x="28" y="38">Public automation and code mix</text>
   <text class="subtitle" x="28" y="60">Changed lines in merged public pull requests / trailing twelve months</text>
-  <rect x="28.00" y="86" width="536.93" height="22" fill="#3178c6" />
-  <rect x="564.93" y="86" width="155.80" height="22" fill="#f1e05a" />
-  <rect x="720.74" y="86" width="48.90" height="22" fill="#dea584" />
-  <rect x="769.64" y="86" width="33.28" height="22" fill="#3572a5" />
-  <rect x="802.92" y="86" width="28.29" height="22" fill="#89e051" />
+  <rect x="28.00" y="86" width="536.98" height="22" fill="#3178c6" />
+  <rect x="564.98" y="86" width="155.78" height="22" fill="#f1e05a" />
+  <rect x="720.76" y="86" width="48.89" height="22" fill="#dea584" />
+  <rect x="769.65" y="86" width="33.28" height="22" fill="#3572a5" />
+  <rect x="802.93" y="86" width="28.28" height="22" fill="#89e051" />
   <rect x="831.21" y="86" width="19.57" height="22" fill="#563d7c" />
   <rect x="850.78" y="86" width="21.22" height="22" fill="#8c959f" />
   <g>
     <circle cx="34" cy="138" r="6" fill="#3178c6" />
     <text class="body" x="48" y="142">TypeScript</text>
-    <text class="label" x="426" y="142" text-anchor="end">63.6% / 75,391 lines</text>
+    <text class="label" x="426" y="142" text-anchor="end">63.6% / 75,407 lines</text>
   </g>
   <g>
     <circle cx="456" cy="138" r="6" fill="#f1e05a" />
