@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="420" height="410" viewBox="0 0 420 410" role="img" aria-labelledby="title desc">
   <title id="title">Public automation and code mix for mobile screens</title>
-  <desc id="desc">A mobile-friendly language mix derived from 235 merged public pull requests over the trailing twelve months.</desc>
+  <desc id="desc">A mobile-friendly language mix derived from 237 merged public pull requests over the trailing twelve months.</desc>
   <style>
     .bg { fill: #ffffff; stroke: #d0d7de; }
     .panel { fill: #f6f8fa; stroke: #d8dee4; }
@@ -20,17 +20,17 @@
   <rect class="bg" x="0.5" y="0.5" width="419" height="409" rx="8" />
   <text class="title" x="24" y="38" style="font-size:20px">Public automation and code mix</text>
   <text class="subtitle" x="24" y="60">Changed lines in merged public pull requests</text>
-  <rect x="24.00" y="86" width="236.77" height="22" fill="#3178c6" />
-  <rect x="260.77" y="86" width="68.61" height="22" fill="#f1e05a" />
-  <rect x="329.39" y="86" width="21.53" height="22" fill="#dea584" />
-  <rect x="350.92" y="86" width="14.66" height="22" fill="#3572a5" />
-  <rect x="365.58" y="86" width="12.46" height="22" fill="#89e051" />
-  <rect x="378.03" y="86" width="8.62" height="22" fill="#563d7c" />
-  <rect x="386.65" y="86" width="9.35" height="22" fill="#8c959f" />
+  <rect x="24.00" y="86" width="236.97" height="22" fill="#3178c6" />
+  <rect x="260.97" y="86" width="68.52" height="22" fill="#f1e05a" />
+  <rect x="329.48" y="86" width="21.50" height="22" fill="#dea584" />
+  <rect x="350.98" y="86" width="14.64" height="22" fill="#3572a5" />
+  <rect x="365.62" y="86" width="12.44" height="22" fill="#89e051" />
+  <rect x="378.06" y="86" width="8.61" height="22" fill="#563d7c" />
+  <rect x="386.67" y="86" width="9.33" height="22" fill="#8c959f" />
   <g>
     <circle cx="30" cy="140" r="6" fill="#3178c6" />
     <text class="body" x="44" y="144">TypeScript</text>
-    <text class="label" x="396" y="144" text-anchor="end">63.6% / 75,492 lines</text>
+    <text class="label" x="396" y="144" text-anchor="end">63.7% / 75,660 lines</text>
   </g>
   <g>
     <circle cx="30" cy="170" r="6" fill="#f1e05a" />
