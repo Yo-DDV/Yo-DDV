@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="420" height="410" viewBox="0 0 420 410" role="img" aria-labelledby="title desc">
   <title id="title">Public automation and code mix for mobile screens</title>
-  <desc id="desc">A mobile-friendly language mix derived from 242 merged public pull requests over the trailing twelve months.</desc>
+  <desc id="desc">A mobile-friendly language mix derived from 247 merged public pull requests over the trailing twelve months.</desc>
   <style>
     .bg { fill: #ffffff; stroke: #d0d7de; }
     .panel { fill: #f6f8fa; stroke: #d8dee4; }
@@ -20,17 +20,17 @@
   <rect class="bg" x="0.5" y="0.5" width="419" height="409" rx="8" />
   <text class="title" x="24" y="38" style="font-size:20px">Public automation and code mix</text>
   <text class="subtitle" x="24" y="60">Changed lines in merged public pull requests</text>
-  <rect x="24.00" y="86" width="237.55" height="22" fill="#3178c6" />
-  <rect x="261.55" y="86" width="68.20" height="22" fill="#f1e05a" />
-  <rect x="329.75" y="86" width="21.40" height="22" fill="#dea584" />
-  <rect x="351.15" y="86" width="14.57" height="22" fill="#3572a5" />
-  <rect x="365.71" y="86" width="12.43" height="22" fill="#89e051" />
-  <rect x="378.15" y="86" width="8.57" height="22" fill="#563d7c" />
-  <rect x="386.71" y="86" width="9.29" height="22" fill="#8c959f" />
+  <rect x="24.00" y="86" width="237.77" height="22" fill="#3178c6" />
+  <rect x="261.77" y="86" width="68.06" height="22" fill="#f1e05a" />
+  <rect x="329.84" y="86" width="21.36" height="22" fill="#dea584" />
+  <rect x="351.20" y="86" width="14.54" height="22" fill="#3572a5" />
+  <rect x="365.73" y="86" width="12.41" height="22" fill="#89e051" />
+  <rect x="378.14" y="86" width="8.59" height="22" fill="#563d7c" />
+  <rect x="386.73" y="86" width="9.27" height="22" fill="#8c959f" />
   <g>
     <circle cx="30" cy="140" r="6" fill="#3178c6" />
     <text class="body" x="44" y="144">TypeScript</text>
-    <text class="label" x="396" y="144" text-anchor="end">63.9% / 76,213 lines</text>
+    <text class="label" x="396" y="144" text-anchor="end">63.9% / 76,435 lines</text>
   </g>
   <g>
     <circle cx="30" cy="170" r="6" fill="#f1e05a" />
@@ -40,7 +40,7 @@
   <g>
     <circle cx="30" cy="200" r="6" fill="#dea584" />
     <text class="body" x="44" y="204">Rust</text>
-    <text class="label" x="396" y="204" text-anchor="end">5.8% / 6,866 lines</text>
+    <text class="label" x="396" y="204" text-anchor="end">5.7% / 6,866 lines</text>
   </g>
   <g>
     <circle cx="30" cy="230" r="6" fill="#3572a5" />
@@ -55,7 +55,7 @@
   <g>
     <circle cx="30" cy="290" r="6" fill="#563d7c" />
     <text class="body" x="44" y="294">CSS</text>
-    <text class="label" x="396" y="294" text-anchor="end">2.3% / 2,748 lines</text>
+    <text class="label" x="396" y="294" text-anchor="end">2.3% / 2,761 lines</text>
   </g>
   <g>
     <circle cx="30" cy="320" r="6" fill="#8c959f" />
