@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="420" height="410" viewBox="0 0 420 410" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="380" viewBox="0 0 420 380" role="img" aria-labelledby="title desc">
   <title id="title">Public automation and code mix for mobile screens</title>
-  <desc id="desc">A mobile-friendly language mix derived from 250 merged public pull requests over the trailing twelve months.</desc>
+  <desc id="desc">A mobile-friendly language mix derived from 77 merged public pull requests over the trailing twelve months.</desc>
   <style>
     .bg { fill: #ffffff; stroke: #d0d7de; }
     .panel { fill: #f6f8fa; stroke: #d8dee4; }
@@ -17,50 +17,44 @@
       .subtitle, .label, .muted { fill: #8b949e; }
     }
   </style>
-  <rect class="bg" x="0.5" y="0.5" width="419" height="409" rx="8" />
+  <rect class="bg" x="0.5" y="0.5" width="419" height="379" rx="8" />
   <text class="title" x="24" y="38" style="font-size:20px">Public automation and code mix</text>
   <text class="subtitle" x="24" y="60">Changed lines in merged public pull requests</text>
-  <rect x="24.00" y="86" width="239.02" height="22" fill="#3178c6" />
-  <rect x="263.02" y="86" width="68.99" height="22" fill="#f1e05a" />
-  <rect x="332.01" y="86" width="20.64" height="22" fill="#dea584" />
-  <rect x="352.65" y="86" width="14.05" height="22" fill="#3572a5" />
-  <rect x="366.69" y="86" width="11.99" height="22" fill="#89e051" />
-  <rect x="378.68" y="86" width="8.30" height="22" fill="#563d7c" />
-  <rect x="386.98" y="86" width="9.02" height="22" fill="#8c959f" />
+  <rect x="24.00" y="86" width="215.11" height="22" fill="#f1e05a" />
+  <rect x="239.11" y="86" width="102.82" height="22" fill="#dea584" />
+  <rect x="341.94" y="86" width="39.25" height="22" fill="#89e051" />
+  <rect x="381.19" y="86" width="9.15" height="22" fill="#7e7eff" />
+  <rect x="390.34" y="86" width="5.11" height="22" fill="#cb171e" />
+  <rect x="395.45" y="86" width="1.00" height="22" fill="#8c959f" />
   <g>
-    <circle cx="30" cy="140" r="6" fill="#3178c6" />
-    <text class="body" x="44" y="144">TypeScript</text>
-    <text class="label" x="396" y="144" text-anchor="end">64.3% / 79,523 lines</text>
+    <circle cx="30" cy="140" r="6" fill="#f1e05a" />
+    <text class="body" x="44" y="144">JavaScript</text>
+    <text class="label" x="396" y="144" text-anchor="end">57.8% / 14,364 lines</text>
   </g>
   <g>
-    <circle cx="30" cy="170" r="6" fill="#f1e05a" />
-    <text class="body" x="44" y="174">JavaScript</text>
-    <text class="label" x="396" y="174" text-anchor="end">18.5% / 22,953 lines</text>
+    <circle cx="30" cy="170" r="6" fill="#dea584" />
+    <text class="body" x="44" y="174">Rust</text>
+    <text class="label" x="396" y="174" text-anchor="end">27.6% / 6,866 lines</text>
   </g>
   <g>
-    <circle cx="30" cy="200" r="6" fill="#dea584" />
-    <text class="body" x="44" y="204">Rust</text>
-    <text class="label" x="396" y="204" text-anchor="end">5.5% / 6,866 lines</text>
+    <circle cx="30" cy="200" r="6" fill="#89e051" />
+    <text class="body" x="44" y="204">Shell</text>
+    <text class="label" x="396" y="204" text-anchor="end">10.6% / 2,621 lines</text>
   </g>
   <g>
-    <circle cx="30" cy="230" r="6" fill="#3572a5" />
-    <text class="body" x="44" y="234">Python</text>
-    <text class="label" x="396" y="234" text-anchor="end">3.8% / 4,673 lines</text>
+    <circle cx="30" cy="230" r="6" fill="#7e7eff" />
+    <text class="body" x="44" y="234">Nix</text>
+    <text class="label" x="396" y="234" text-anchor="end">2.5% / 611 lines</text>
   </g>
   <g>
-    <circle cx="30" cy="260" r="6" fill="#89e051" />
-    <text class="body" x="44" y="264">Shell</text>
-    <text class="label" x="396" y="264" text-anchor="end">3.2% / 3,989 lines</text>
+    <circle cx="30" cy="260" r="6" fill="#cb171e" />
+    <text class="body" x="44" y="264">YAML</text>
+    <text class="label" x="396" y="264" text-anchor="end">1.4% / 341 lines</text>
   </g>
   <g>
-    <circle cx="30" cy="290" r="6" fill="#563d7c" />
-    <text class="body" x="44" y="294">CSS</text>
-    <text class="label" x="396" y="294" text-anchor="end">2.2% / 2,761 lines</text>
+    <circle cx="30" cy="290" r="6" fill="#8c959f" />
+    <text class="body" x="44" y="294">Other</text>
+    <text class="label" x="396" y="294" text-anchor="end">0.1% / 37 lines</text>
   </g>
-  <g>
-    <circle cx="30" cy="320" r="6" fill="#8c959f" />
-    <text class="body" x="44" y="324">Other</text>
-    <text class="label" x="396" y="324" text-anchor="end">2.4% / 3,000 lines</text>
-  </g>
-  <text class="muted" x="24" y="394">Activity, not a proficiency score. Exclusions match the desktop chart.</text>
+  <text class="muted" x="24" y="364">Activity, not a proficiency score. Exclusions match the desktop chart.</text>
 </svg>
