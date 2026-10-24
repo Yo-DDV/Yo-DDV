@@ -22,7 +22,7 @@
   <text class="subtitle" x="28" y="60">Trailing twelve months of public GitHub data</text>
   <g>
     <rect class="panel" x="28" y="78" width="196" height="70" rx="8" />
-    <text class="metric" x="44" y="108">4,194</text>
+    <text class="metric" x="44" y="108">4,197</text>
     <text class="label" x="44" y="132">public contributions</text>
   </g>
   <g>
@@ -73,15 +73,15 @@
     <text class="muted" x="554" y="268" text-anchor="middle">Jun</text>
   </g>
   <g>
-    <rect x="603" y="209.8" width="44" height="40.2" rx="4" fill="#2f81f7" />
+    <rect x="603" y="209.9" width="44" height="40.1" rx="4" fill="#2f81f7" />
     <text class="muted" x="625" y="268" text-anchor="middle">Jul</text>
   </g>
   <g>
-    <rect x="674" y="182.5" width="44" height="67.5" rx="4" fill="#2f81f7" />
+    <rect x="674" y="182.6" width="44" height="67.4" rx="4" fill="#2f81f7" />
     <text class="muted" x="696" y="268" text-anchor="middle">Aug</text>
   </g>
   <g>
-    <rect x="745" y="176.9" width="44" height="73.1" rx="4" fill="#2f81f7" />
+    <rect x="745" y="177.1" width="44" height="72.9" rx="4" fill="#2f81f7" />
     <text class="muted" x="767" y="268" text-anchor="middle">Sep</text>
   </g>
   <g>
